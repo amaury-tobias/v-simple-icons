@@ -62,7 +62,7 @@
 <script>
 import kebab from 'lodash.kebabcase'
 import Github from 'vue-github-badge'
-import * as icons from '../src'
+import * as icons from '../dist/index.esm'
 import example from './example.md'
 
 export default {
