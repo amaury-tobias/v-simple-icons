@@ -8,8 +8,8 @@
   },
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
-  "cdn": "dist/index.umd.min.js",
-  "unpkg": "dist/index.umd.min.js",
+  "cdn": "dist/index.umd.js",
+  "unpkg": "dist/index.umd.js",
   "types": "./index.d.ts",
   "files": [
     "dist",
@@ -20,42 +20,35 @@
   "scripts": {
     "test": "echo 'no tests!'",
     "prepublishOnly": "npm run build",
-    "build": "npm run build:icons && npm run build:dist",
-    "build:dist": "bili --format umd,es,cjs,umd-min --minimal --module-name vSimpleIcons",
-    "build:icons": "node build && babel src/components -d icons",
+    "build": "npm run build:components && npm run build:dist",
+    "build:components": "node build",
+    "build:dist": "rollup --config rollup.config.js",
     "example": "poi --serve --config example/poi.config.js",
     "build:example": "poi --prod --config example/poi.config.js",
-    "prebuild:example": "npm run build:icons"
+    "prebuild:example": "npm run build"
   },
   "author": "amaury.tobiasqr@gmail.com",
   "license": "MIT",
   "dependencies": {
-    "babel-helper-vue-jsx-merge-props": "^2.0.3"
+    "@vue/babel-helper-vue-jsx-merge-props": "^1.0.0",
+    "@vue/babel-preset-jsx": "^1.1.2"
   },
   "devDependencies": {
-    "@babel/cli": "^7.8.4",
-    "@babel/core": "^7.8.4",
-    "bili": "^4.8.1",
+    "@rollup/plugin-commonjs": "^11.0.2",
+    "@rollup/plugin-node-resolve": "^7.1.1",
     "fs-extra": "^8.1.0",
     "lodash.kebabcase": "^4.1.1",
     "marked": "^0.8.0",
     "pascal-case": "^3.1.1",
     "poi": "^12.7.5",
     "prismjs": "^1.19.0",
+    "rollup": "^1.31.1",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-terser": "^5.2.0",
     "simple-icons": "^2.5.0",
     "v-tippy": "^2.0.0",
     "vue": "^2.6.11",
     "vue-github-badge": "^1.0.1",
     "vue-template-compiler": "^2.6.11"
-  },
-  "babel": {
-    "presets": [
-      [
-        "poi/babel",
-        {
-          "jsx": "vue"
-        }
-      ]
-    ]
   }
 }
