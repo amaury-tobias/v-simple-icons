@@ -53,7 +53,7 @@ Promise.all(
   const main = icons
     .map(
       icon =>
-        `export { default as ${icon.pascalCasedComponentName} } from '../icons/${icon.pascalCasedComponentName}'`
+        `export { default as ${icon.pascalCasedComponentName} } from '../src/components/${icon.pascalCasedComponentName}'`
     )
     .join('\n\n')
   return fs.outputFile('./src/index.js', main, 'utf8')
