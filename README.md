@@ -19,7 +19,7 @@ yarn add v-simple-icons
 import { VueJsIcon, AirbnbIcon, ... } from 'v-simple-icons'
 ```
 
-See all icons and usage here: https://vue-feather-icons.netlify.com
+See all icons and usage here: https://v-simple-icons.netlify.com
 
 ### Sizing
 
