@@ -1,3 +1,5 @@
+declare module 'v-simple-icons/icons/*' {}
+
 declare module 'v-simple-icons' {
   import { Component } from 'vue'
 
