@@ -1,4 +1,4 @@
-declare module 'vue-simple-icons' {
+declare module 'v-simple-icons' {
   import { Component } from 'vue'
 
   export const NetIcon: Component
