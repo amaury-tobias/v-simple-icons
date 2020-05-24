@@ -6281,9 +6281,9 @@ signal-exit@^3.0.0, signal-exit@^3.0.2:
   integrity sha1-tf3AjxKH6hF4Yo5BXiUTK3NkbG0=
 
 simple-icons@^2.5.0:
-  version "2.5.0"
-  resolved "https://registry.yarnpkg.com/simple-icons/-/simple-icons-2.5.0.tgz#910edd11f2cb46920c3a83e856e920aa53e7f23c"
-  integrity sha512-AuGV7c+NfcgTdExkXeuwFbVKpTyv9aP+hdJIMnU+0jrHi+bWHQcifmjoXXJWmjPbV6TeSBjuEi7B0c70mclX5A==
+  version "2.14.0"
+  resolved "https://registry.yarnpkg.com/simple-icons/-/simple-icons-2.14.0.tgz#10c170049763db62482799f6e66ab00bffc2b95a"
+  integrity sha512-AUixKWXsT53vcbwBrypERGUCWPmffpMToj9yXxY2qri2KTCvZp5JOfkht3+aaIWn0RR3EkNKi6hf2ySIz22h3g==
 
 simple-swizzle@^0.2.2:
   version "0.2.2"
