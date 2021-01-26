@@ -38,7 +38,7 @@
     "bili": "^4.8.1",
     "fs-extra": "^8.1.0",
     "lodash.kebabcase": "^4.1.1",
-    "marked": "^0.8.0",
+    "marked": "^1.2.8",
     "pascal-case": "^3.1.1",
     "poi": "^12.7.5",
     "prismjs": "^1.19.0",
